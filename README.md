@@ -52,3 +52,4 @@ ever lacks them: `sudo apt install fonts-dejavu`.
   deliberate, to avoid constant DB writes.
 - Levels come from `level = floor(sqrt(xp / 100))`; level *L* needs `100·L²` total XP.
   Tune feel with `^set`.
+

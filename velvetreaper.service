@@ -1,0 +1,16 @@
+[Unit]
+Description=Velvet Reaper Discord Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/mnt/verbatim_mnt/velvetreaper
+EnvironmentFile=/mnt/verbatim_mnt/velvetreaper/.env
+ExecStart=/mnt/verbatim_mnt/velvetreaper/venv/bin/python bot.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
